@@ -12,4 +12,4 @@ RUN pip install --no-cache-dir --upgrade pip \
 # Copy rest of the code after dependencies (so Docker cache is reused)
 COPY . .
 
-CMD ["python", "app.py"]
+CMD ["python", "backend/app.py"]
