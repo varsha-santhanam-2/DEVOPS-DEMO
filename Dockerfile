@@ -1,20 +1,15 @@
-# Use official Python image
 FROM python:3.11-slim
 
-# Set working directory inside container
 WORKDIR /app
 
-# Copy only requirements first (for caching)
+# Copy only requirements first (this allows caching)
 COPY requirements.txt .
 
-# Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+# Upgrade pip and install dependencies (no hash check)
+RUN pip install --no-cache-dir --upgrade pip \
+    && pip install --no-cache-dir --trusted-host pypi.org --trusted-host files.pythonhosted.org -r requirements.txt
 
-# Copy the rest of the backend code
+# Copy rest of the code after dependencies (so Docker cache is reused)
 COPY . .
 
-# Expose the port Flask will run on
-EXPOSE 5000
-
-# Run the Flask app
 CMD ["python", "app.py"]
