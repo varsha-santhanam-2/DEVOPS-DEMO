@@ -5,19 +5,19 @@ pipeline {
 
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/varsha-santhanam-2/DEVOPS-DEMO'
+                git branch: 'main', url: 'https://github.com/varsha-santhanam-2/DEVOPS-DEMO'
             }
         }
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t twitter-app .'
+                bat 'docker build -t twitter-app .'
             }
         }
 
         stage('Run Container') {
             steps {
-                sh 'docker run -d -p 5000:5000 twitter-app'
+                bat 'docker run -d -p 5000:5000 twitter-app'
             }
         }
     }
