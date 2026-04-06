@@ -11,13 +11,13 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t twitter-app .'
+                bat '"C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe" build -t twitter-app .'
             }
         }
 
         stage('Run Container') {
             steps {
-                bat 'docker run -d -p 5000:5000 twitter-app'
+                bat '"C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe" run -d -p 5000:5000 twitter-app'
             }
         }
     }
