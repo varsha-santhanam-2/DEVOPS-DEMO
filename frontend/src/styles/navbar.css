@@ -1,0 +1,27 @@
+.navbar {
+  height: 60px;
+  border-bottom: 1px solid #e6ecf0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+  background: white;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  color: #1da1f2;
+}
+
+.nav-links a,
+.nav-links button {
+  margin-left: 15px;
+  border: none;
+  background: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: #1da1f2;
+}

@@ -1,0 +1,127 @@
+
+body {
+  margin: 0;
+  font-family: 
+    "Segoe UI", 
+    sans-serif;
+  background-color: white;
+}
+
+/* Full page layout */
+.landing {
+  display: flex;
+  height: 100vh;
+}
+
+/* LEFT SIDE */
+.left-panel {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height:auto;
+}
+.x-logo {
+  width: 450px;   /* increase this */
+  height: 900px;   /* keeps image ratio */
+}
+
+.big-x {
+  font-size: 280px;
+  font-weight: bold;
+  color: white;
+}
+
+/* RIGHT SIDE */
+.right-panel {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
+}
+.title {
+  font-size: 72px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  white-space: nowrap;   /* prevents line break */
+}
+
+
+.title {
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+.x-logo {
+  width: 300px;   /* change this value */
+  height: auto;
+}
+
+
+.login-form input {
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+}
+
+.login-form input:focus {
+  border: 1px solid black;
+}
+
+/* Button */
+.primary-btn {
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: #333;
+}
+
+/* Error */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Switch text */
+.switch {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.switch span {
+  color: #1d9bf0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.switch span:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #ffffff;
+}
+
+.app {
+  display: flex;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  border-right: 1px solid #e6ecf0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.sidebarItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.sidebarItem:hover {
+  background: #f0f2f5;
+}
+
+.sidebarItem.active {
+  font-weight: bold;
+}
+
+.postBtn {
+  background: #1d9bf0;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 30px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.profileMini {
+  position: absolute;
+  bottom: 20px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: teal;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* FEED */
+.feed {
+  flex: 1;
+  border-right: 1px solid #e6ecf0;
+  min-height: 100vh;
+}
+
+.feedHeader {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  border-bottom: 1px solid #e6ecf0;
+  font-weight: bold;
+}
+
+.activeTab {
+  border-bottom: 3px solid #1d9bf0;
+  padding-bottom: 5px;
+}
+
+.showPosts {
+  text-align: center;
+  padding: 10px;
+  color: #1d9bf0;
+  cursor: pointer;
+  border-bottom: 1px solid #e6ecf0;
+}
+
+.tweet {
+  display: flex;
+  padding: 15px;
+  border-bottom: 1px solid #e6ecf0;
+}
+
+.tweetAvatar img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.tweetBody {
+  margin-left: 15px;
+  width: 100%;
+}
+
+.tweetHeader {
+  display: flex;
+  gap: 8px;
+}
+
+.username {
+  color: gray;
+  font-size: 14px;
+}
+
+.tweetImage {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+/* RIGHT BAR */
+.rightbar {
+  width: 350px;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.searchBox input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  background: #f5f8fa;
+}
+
+.subscribeBtn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  background: #1d9bf0;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card {
+  background: #f7f9f9;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.newsItem {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.newsItem:hover {
+  background: #eaeaea;
+}
+
+.meta {
+  font-size: 12px;
+  color: gray;
+}
+
+.trend {
+  font-size: 12px;
+  color: gray;
+}

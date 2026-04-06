@@ -1,0 +1,26 @@
+.tweet-box {
+  padding: 15px;
+  border-bottom: 1px solid #e6ecf0;
+}
+
+.tweet-box textarea {
+  width: 100%;
+  border: none;
+  resize: none;
+  font-size: 16px;
+}
+
+.tweet-box button {
+  float: right;
+  background: #1da1f2;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+.tweet {
+  padding: 15px;
+  border-bottom: 1px solid #e6ecf0;
+  color: aqua;
+}
